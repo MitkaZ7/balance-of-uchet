@@ -1,0 +1,32 @@
+body {
+    background-color: $dark-bg-color;
+    font-family: Poiret, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    background-color: $light-bg-color;
+    color: $main-color;
+    margin: 50px auto 0;
+    padding: 20px 60px;
+    max-width: 1150px;
+    @media (max-width: 1200px) {
+        max-width: 960px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding: 0 12px;;
+    }
+}
+
+a {
+    color: $main-color;
+    text-decoration: none;
+}
+
+a:visited {
+    color: $main-color;
+    text-decoration: none;
+
+}

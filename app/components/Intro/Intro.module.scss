@@ -1,0 +1,30 @@
+.intro {
+    margin-top: 80px;
+   &__content {
+    max-width: 1025px;
+    width: 100%;
+    height: 475px;
+    background: url('../../../public/images/inttro-bg.png') center / cover;
+    border-radius: 19px;
+    font-size: 51px;
+    font-family: Russo, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    display: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+   }
+   &__title {
+    color: #3C4434;
+    background-color: #F6F5F5;
+    display: inline-block;
+    border-radius:0px 0px 19px 0px;
+    height: 70px;
+    padding-right: 12px;
+   }
+   &__subtitle {
+    color: #F6F5F5;
+    padding-left: 12px;
+   }
+
+}
