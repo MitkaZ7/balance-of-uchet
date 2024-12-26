@@ -7,7 +7,7 @@
         font-weight: 400;
         font-size: 36px;
         letter-spacing: 0.03em;
-        color: #3c4434;
+        color: $main-color;
 
     }
     &__feedbacks-list {
@@ -28,8 +28,8 @@
           }
     }
     &__summary {
-        background-color: #3C4434;
-        color: #fff;
+        background-color: $dark-bg-color;
+        color: $bright-color;
         height: 190px;
         font-weight: 400;
         font-size: 36px;
