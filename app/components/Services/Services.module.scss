@@ -1,0 +1,18 @@
+.services-section {
+    margin-top: 70px;
+    padding: 0 60px;
+    
+    &__title {
+        letter-spacing: 0.03em;
+        font-family: Russo, Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    &__services-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 30px 70px;
+    }
+}

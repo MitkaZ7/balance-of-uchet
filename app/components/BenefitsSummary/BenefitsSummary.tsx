@@ -1,13 +1,15 @@
-import React from 'react'
+import styles from './BenefitsSummary.module.scss'
+
 
 export const BenefitsSummary = () => {
   return (
-    <aside>
-      <p>
-      Таким образом, бухгалтерские компании предоставляют широкий спектр услуг, 
-      связанных с финансовыми аспектами деятельности предприятий, 
-      что позволяет клиентам сосредоточиться на основной деятельности своего бизнеса, 
-      передав рутинные задачи профессионалам.
+    <aside className={styles['summary']}>
+      <p className={styles['summary__text-paragraph']}>
+        Мы верим, что настоящая ценность заключается в <em className={styles['summary__text-accent']}>качестве</em>, а не в количестве обслуживаемых клиентов. 
+      </p>
+      <p className={styles['summary__text-paragraph']}>
+        <em className={styles['summary__text-accent']}> Наша главная цель: </em> 
+        высокое качество работы, что является основой нашего успеха и доверия клиентов. 
       </p>
     </aside>
   )

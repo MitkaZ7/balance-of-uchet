@@ -1,16 +1,16 @@
 import { FeedbacksData } from "app/types/feedback"
 import feedbacksData from "../../data/feedbacks.json"
 import { FeedbackCard } from "@components/FeedbackCard/FeedbackCard";
-
+import styles from './Feedbacks.module.scss'
 
 export const Feedbacks = () => {
 
     const { feedbacks } = feedbacksData as FeedbacksData;
 
   return (
-    <section>
-        <h2>Отзывы наших клиентов</h2>
-        <ul>
+    <section className={styles['feedbacks-section']}>
+        <h2 className={styles['feedbacks-section__title']}>Отзывы наших клиентов</h2>
+        <ul className={styles['feedbacks-section__feedbacks-list']}>
             {
                feedbacks.map((feedback, index) => {
                 return <FeedbackCard
@@ -22,6 +22,10 @@ export const Feedbacks = () => {
                })
             }
         </ul>
+        <p className={styles['feedbacks-section__summary']}>
+        Сотрудничая с нами, вы можете быть уверены, 
+        что ваши финансы будут в надежных руках. Мы уже помогли многим компаниям оптимизировать их затраты, и готовы сделать то же самое для вас.
+        </p>
     </section>
   )
 }

@@ -1,0 +1,38 @@
+.callme-section {
+    margin-top: 160px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    
+
+    &__title {
+        font-family: Russo, Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin-left: 35px;
+        margin-bottom: 65px;
+        letter-spacing: 0.03em;
+    }
+
+    div {
+        // margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 369px;
+    }
+
+
+    &__image_place_left {
+      
+        min-width: 380px;
+      
+        background: url('../../../public/images/acc-vibe-pic-left.png') center / cover;
+        border-radius:0px 60px 0px 0px;
+    }
+    &__image_place_right {
+        min-width: 380px;
+   
+
+        background: url('../../../public/images/acc-vibe-pic-right.png') no-repeat;
+        border-radius: 60px 0px 0px 0px;
+    }
+}

@@ -1,0 +1,28 @@
+.summary {
+    margin: 30px auto 70px; 
+    font-family: Poiret, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    max-width: 1015px;
+    min-height: 240px;
+    font-size: 30px;
+    background-color: #3C4434;
+    border-radius: 32px 0 32px 98px;
+
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    padding: 25px 0 30px 50px;
+
+    &__text-paragraph {
+        max-width: 900px;
+
+        &:nth-of-type(1) {
+            margin-bottom: 10px;
+        }
+    }
+    &__text-accent {
+        font-size: 48px;
+    }
+}

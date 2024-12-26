@@ -1,14 +1,14 @@
 body {
     background-color: $dark-bg-color;
-    font-family: Poiret, Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 
 .container {
+    font-family: Poiret, Arial, Helvetica, sans-serif;
     background-color: $light-bg-color;
     color: $main-color;
     margin: 50px auto 0;
-    padding: 20px 60px;
+    // padding: 20px 60px;
     max-width: 1150px;
     @media (max-width: 1200px) {
         max-width: 960px;

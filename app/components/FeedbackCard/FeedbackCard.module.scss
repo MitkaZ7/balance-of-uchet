@@ -1,0 +1,32 @@
+.feedback-card {
+    background: rgba(118, 118, 118, 0.38);;
+    border-radius: 50px;
+    height: 310px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+
+    &__credentials {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        place-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__logo {
+        height: 85px;
+        width: 85px;
+        // border-radius: 50%;
+        
+    }
+    &__name {
+     
+    }
+    &__feedback-text {
+        font-size: 24px;
+        letter-spacing: 0.06em;
+        text-align: right;
+        color: rgba(0, 0, 0, 0.66);
+    }
+}

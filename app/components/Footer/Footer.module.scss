@@ -1,0 +1,51 @@
+.footer {
+    padding:  55px 60px 80px;
+    color: #fff;
+    background-color: #303828;
+    margin-bottom: 200px;
+    margin-top: 150px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+
+
+    &__details {
+        font-size: 24px;
+        // align-self: flex-start;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    &__company-name {
+        font-size: 36px;
+       
+    }
+    &__company-email {
+
+    }
+    &__company-phone{
+
+    }
+    &__company-inn {
+
+    }
+    &__social-links {
+        // align-self: flex-end;
+        ul {
+            display: flex;
+            gap: 10px;
+            li {
+                
+            }
+        }
+        
+
+    }
+    &__authority {
+        min-width: 960px;
+        text-align: center;
+    }
+
+}

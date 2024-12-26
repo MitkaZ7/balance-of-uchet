@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from './Button.module.scss'
 
 export const Button = () => {
   return (
-    <button>
+    <button className={styles.button}>
         Заказать консультацию
     </button>
   )
