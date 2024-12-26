@@ -1,5 +1,5 @@
 .feedback-card {
-    background: $shadowed-bg-color;
+    background: $darken-alt-bg-clr;
     border-radius: 50px;
     height: 310px;
     display: flex;
@@ -27,6 +27,6 @@
         font-size: 24px;
         letter-spacing: 0.06em;
         text-align: right;
-        color: $main-color;
+        color: $main-text-clr;
     }
 }

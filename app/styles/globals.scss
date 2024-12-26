@@ -1,12 +1,12 @@
 body {
-    background-color: $dark-bg-color;
+    background-color: $dark-bg-clr;
     font-weight: 700;
 }
 
 .container {
     font-family: Poiret, Arial, Helvetica, sans-serif;
-    background-color: $light-bg-color;
-    color: $main-color;
+    background-color: $light-bg-clr;
+    color: $main-text-clr;
     margin: 50px auto 0;
     // padding: 20px 60px;
     max-width: 1150px;
@@ -21,12 +21,12 @@ body {
 }
 
 a {
-    color: $main-color;
+    color: $main-text-clr;
     text-decoration: none;
 }
 
 a:visited {
-    color: $main-color;
+    color: $main-text-clr;
     text-decoration: none;
 
 }

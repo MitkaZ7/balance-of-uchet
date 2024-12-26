@@ -14,7 +14,7 @@
         font-weight: 400;
         font-size: 36px;
         letter-spacing: 0.03em;
-        color: $main-color;
+        color: $main-text-clr;
 
     }
     &__fieldset {
@@ -29,8 +29,8 @@
         font-size: 30px;
         padding-left: 40px;
         letter-spacing: 0.06em;
-        background: $light-darken-bg-color;
-        border: 2px solid $main-color;
+        background: $light-darken-bg-clr;
+        border: 2px solid $main-text-clr;
         border-radius: 40px;
         height: 60px;
         width: 255px;
@@ -38,8 +38,8 @@
     &__submit-button {
         text-align: center;
         padding: 0;
-        color: $bright-color;
-        background-color: $dark-bg-color;
+        color: $bright-text-clr;
+        background-color: $dark-bg-clr;
         grid-row: 2/-2;
     }
 }

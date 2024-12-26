@@ -16,13 +16,13 @@
         z-index: 2;
         margin-top: 40px;
         span {
-            color: $bright-color;
+            color: $bright-text-clr;
         }
     }
     &__subtitle {
         margin-top: 80px;
         font-size: 36px;
-        color: $main-color;
+        color: $main-text-clr;
     }
 
     &__picture {
@@ -48,12 +48,12 @@
             font-weight: 900;
             font-size: 120px;
             text-align: right;
-            color: $lighten-color;
+            color: $lighter-text-clr;
             text-align: left;
          }
          p:last-of-type {
             font-size: 32px;
-            color: $main-color;
+            color: $main-text-clr;
             margin-bottom: 65px;
          }
     }
@@ -68,6 +68,6 @@
         font-weight: 400;
         font-size: 36px;
         text-align: center;
-        color: $main-color;
+        color: $main-text-clr;
     }
 }
