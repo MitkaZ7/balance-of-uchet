@@ -17,8 +17,8 @@
     letter-spacing: 0.03em;
    }
    &__title {
-    color: #3C4434;
-    background-color: #F6F5F5;
+    color: $main-color;
+    background-color: $light-bg-color;
     display: inline-block;
     border-radius:0px 0px 19px 0px;
     height: 70px;
@@ -26,7 +26,7 @@
    }
    &__subtitle {
 
-    color: #F6F5F5;
+    color: $aletrnate-color;
     padding-left: 15px;
    }
 
