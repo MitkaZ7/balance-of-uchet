@@ -1,6 +1,7 @@
 import servicesData from '../../data/services.json'
 import { ServicesData } from 'app/types/service';
 import { ServiceCard } from '@components/ServiceCard/ServiceCard';
+import { BenefitsSummary } from '@components/BenefitsSummary/BenefitsSummary';
 import styles from './Services.module.scss'
 export const Services = () => {
 
@@ -21,7 +22,13 @@ export const Services = () => {
                     examples={service.examples}
                 />
                 ))}
+              <div className={styles['services-section__benefits-wrapper']}>
+                <BenefitsSummary/>
+              </div>
+               
+              
            </ul>
+           
         </div>
     </section>
   )

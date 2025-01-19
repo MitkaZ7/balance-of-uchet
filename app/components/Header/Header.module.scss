@@ -1,20 +1,75 @@
 .header {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: Russo, Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.4rem;
     margin-top: 50px;
     padding: 20px 60px 0;
+    white-space: nowrap;
+
+
+
+    @container (max-width: 768px) {
+        font-size: 1rem;
+    }
+    @container (max-width: 395px) {
+        margin-top: 15px;
+        font-size: 1rem;
+        padding: 0 30px;
+    }
+
+    &__company {
+        margin-right: 10px;
+        transition: opacity ease-in-out 0.4s;
+        &:hover {
+            filter:opacity(.5);
+            cursor: default;
+        }
+    }
+    
+    &__nav {
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;
+
+    }
+
+    &__nav-phone {
+        margin-right: 50px;
+
+        @container (max-width: 768px) {
+
+        }
+        @container (max-width: 395px) {
+         margin-right: 0;
+        }
+    }
+
+    &__nav-email {
+        @container (max-width: 768px) {
+
+        }
+        @container (max-width: 395px) {
+         display: none;
+        }
+    }
+
     &_nav-list{
         display: flex;
-        min-width: 360px;
+        // max-width: 360px;
         // width: 100%;
-        justify-content: space-between;
-        & li:first-of-type {
-            margin-right: 50px;
+        // width: 100%;
+        // align-self: flex-end;
+
+        
+        li > a {
+            @include link;
         }
+       
+        
         
     }
 

@@ -3,6 +3,14 @@
     display: grid;
     grid-template-rows: auto 1fr;
     
+    @container (max-width: 768px) {
+       margin-top: 50px;
+       text-align: center;
+    }
+
+    @container (max-width: 395px) {
+       margin-top: 20px;
+    }
 
     &__title {
         font-family: Russo, Arial, Helvetica, sans-serif;
@@ -10,27 +18,115 @@
         margin-left: 35px;
         margin-bottom: 65px;
         letter-spacing: 0.03em;
+
+        @container (max-width: 768px) {
+            margin-bottom: 50px;
+            margin-left: 0;
+         }
+     
+         @container (max-width: 395px) {
+                font-size: 1rem;
+         }
+
+    }
+    &__button {
+        align-self: center;
+
+        max-height: 70px;
+        height: 100%;
+        max-width: 215px;
+        width: 100%;
+        border-radius: 25px;
+        border-color: $main-text-clr;
+        background-color: $light-bg-clr;
+        font-family: Poiret, Helvetica, sans-serif;
+        font-size: 25px;
+        margin: 0 20px;
+        @container (max-width: 768px) {
+            align-items: flex-start;
+            max-height: 60px;
+            max-width: 180px;
+           font-size: 1.4rem;
+
+         }
+      
+          @container (max-width: 395px) {
+           height: 125px;
+           max-height: 65px;
+           max-width: 195px;
+           border-radius: 20px;
+           font-size: 1.5rem;
+           order: 3;
+         }
+
     }
 
-    div {
-        // margin-top: 65px;
+    &__content {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        height: 369px;
+        min-height: 370px;
+        // width: 100%;
+        justify-content: space-between;
+
+       
+
+        @container (max-width: 768px) {
+            align-items: flex-start;
+            min-height: 235px;
+
+        }
+      
+          @container (max-width: 395px) {
+           min-height: 125px;
+             
+         }
     }
 
 
     &__image_place_left {
-        min-width: 380px;
-        background: url('../../../public/images/acc-vibe-pic-left.png') center / cover;
+        // object-fit: cover;
+        max-width: 380px;
+        height: 100%;
+        width: 100%;
+        background: url('../../../public/images/acc-vibe-pic-left.png') center;
+        background-size: cover;
         border-radius:0px 60px 0px 0px;
-    }
-    &__image_place_right {
-        min-width: 380px;
-   
 
+        @container (max-width: 768px) {
+           
+           max-height: 220px;
+           border-radius:0px 40px 0px 0px;
+
+        }
+     
+        @container (max-width: 395px) {
+            display: none;
+            border-radius:0px 30px 0px 0px;
+            order: 3;
+
+        }
+
+    }
+
+    &__image_place_right {
+        max-width: 380px;
+        height: 100%;
+        width: 100%;
         background: url('../../../public/images/acc-vibe-pic-right.png') no-repeat;
+        background-size: cover;
         border-radius: 60px 0px 0px 0px;
+
+
+        @container (max-width: 768px) {
+            max-width: 235px;
+            max-height: 220px;
+         }
+      
+          @container (max-width: 395px) {
+            max-width: 125px;
+            max-height: 120px;
+            order: 2;
+            border-radius:0px 30px 0px 0px;
+         }
     }
 }

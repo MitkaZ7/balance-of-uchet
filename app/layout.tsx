@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="container">{children}</div>
+        <div className="container" style={{ containerType: 'inline-size' }}>{children}</div>
       </body>
     </html>
   );

@@ -2,17 +2,37 @@
     padding:  55px 60px 80px;
     color: $bright-text-clr;
     background-color: $darken-bg-clr;
-    margin-bottom: 200px;
-    margin-top: 150px;
+    // margin-bottom: 200px;
+    margin-top: 100px;
     justify-content: space-between;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    // flex-direction: column;
 
+    @container (max-width: 395px) {
+        margin-bottom: 0;
+        font-size: 0.7rem;
+        padding:  40px 15px 30px;
+        margin-top: 35px;
+    }
+    
+    // flex-direction: column;
+    @container (max-width: 395px) {
+        margin-bottom: 0;
+        font-size: 0.7rem;
+        padding:  40px 15px 30px;
+        margin-top: 35px;
+    }
 
     &__details {
         font-size: 24px;
+
+        @container (max-width: 395px) {
+      
+            font-size: 0.7rem;
+       
+        }
+
         // align-self: flex-start;
         li {
             margin-bottom: 10px;
@@ -20,6 +40,12 @@
     }
     &__company-name {
         font-size: 36px;
+
+        @container (max-width: 395px) {
+      
+            font-size: 0.7rem;
+       
+        }
        
     }
     &__company-email {
@@ -36,6 +62,14 @@
         ul {
             display: flex;
             gap: 10px;
+
+
+            @container (max-width: 395px) {
+                justify-content: space-between;
+               gap: 5px;
+           
+            }
+
             li {
                 
             }

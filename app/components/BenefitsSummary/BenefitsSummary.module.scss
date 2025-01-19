@@ -1,10 +1,11 @@
 .summary {
-    margin: 30px auto 70px; 
+    // margin: 30px auto 70px; 
+    margin: 0;
     font-family: Poiret, Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: $bright-text-clr;
-    max-width: 1015px;
-    min-height: 240px;
+    // max-width: 1015px;
+    // min-height: 240px;
     font-size: 30px;
     background-color: $dark-bg-clr;
     border-radius: 32px 0 32px 98px;
@@ -15,14 +16,39 @@
     // justify-content: center;
     padding: 25px 0 30px 50px;
 
+    @container (max-width: 768px) {
+        // padding: 15px 15px 5px 15px;
+        padding: 10px;
+        padding-left: 15px;
+        border-radius: 30px;
+        // min-height: 150px;
+        min-height: 150px;
+    }
+
     &__text-paragraph {
+
+
+        @container (max-width: 768px) {
+            font-size: 1rem;
+            text-align: left;
+           
+        }
+
         max-width: 900px;
 
         &:nth-of-type(1) {
             margin-bottom: 10px;
+            @container (max-width: 768px) {
+                margin-top: 10px;
+               
+            }
         }
     }
     &__text-accent {
         font-size: 48px;
+        @container (max-width: 768px) {
+            font-size: 1rem;
+            font-weight: 900;
+        }
     }
 }

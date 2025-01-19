@@ -15,11 +15,11 @@ export default function Home() {
       <Intro/>
       <CallMeSection/>
       <Services/>
-      <BenefitsSummary/>
-      <SmallForm/>
+      {/* <BenefitsSummary/> */}
+      {/* <SmallForm/> */}
       <AboutUs/>
-      <Feedbacks/>
-      <AskUs/>
+      {/* <Feedbacks/> */}
+      {/* <AskUs/> */}
       <Footer/>
     </>
   );

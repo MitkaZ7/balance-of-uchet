@@ -4,9 +4,12 @@
 }
 
 @mixin link {
-    
+    text-decoration: none;
+    color: $main-text-clr;
+    transition: ease-in-out 0.4s;
+
     &:hover {
-        color: $main-text-clr;
+        filter:opacity(.5)
     }
 
     &:visited {
@@ -18,3 +21,4 @@
         box-shadow: 0 0 0 2px $main-text-clr;
     }
 }
+
