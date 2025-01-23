@@ -1,8 +1,8 @@
 .services-section {
     margin-top: 70px;
     padding: 0 60px;
-
-
+    // display: flex;
+    // flex-direction: column;
     @container (max-width: 768px) {
       padding: 0 40px;  
        
@@ -32,11 +32,16 @@
 
     &__services-list {
         display: grid;
+        // display: flex;
+        // flex-wrap: wrap;
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-        grid-template-rows: repeat(2, minmax(155px, 450px));
-        grid-auto-flow: dense;
+        // grid-template-rows: repeat(2, minmax(155px, 450px));
+        grid-template-rows: repeat(4, minmax(155px, 200px));
+        // box-sizing: border-box;
+        // grid-auto-flow: dense;
         gap: 30px 70px;
         place-items: center;
+        
         
         @container (max-width: 768px) {
             gap: 20px 10px;
