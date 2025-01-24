@@ -1,7 +1,7 @@
 .intro {
     margin-top: 80px;
     padding: 0 60px;
-    @container (max-width: 395px) {
+    @container (max-width: 430px) {
     margin-top: 25px;
     padding: 0 27px;
     }
@@ -23,7 +23,7 @@
        max-width: 620px;
        max-height: 286px;
     }
-    @container (max-width: 395px) {
+    @container (max-width: 430px) {
         max-width: 300px;
         max-height: 140px;
     }
@@ -47,7 +47,7 @@
         max-height: 45px;
         
     }
-    @container (max-width: 395px) {
+    @container (max-width: 430px) {
         // margin-top: 15px;
         font-size: 1.1rem;
         max-height: 20px;
@@ -68,7 +68,7 @@
         font-size: 1.7rem;
         padding-left: 5px;
     }
-     @container (max-width: 395px) {
+     @container (max-width: 430px) {
         font-size: 0.9rem;
         padding-left: 5px;
         white-space: pre-wrap;

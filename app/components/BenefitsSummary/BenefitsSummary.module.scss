@@ -25,6 +25,13 @@
         min-height: 150px;
     }
 
+    @container (max-width: 430px) {
+        border-radius: 10px 30px 30px 30px;
+        border: 2px solid $dark-bg-clr;
+        background-color: $light-bg-clr;
+        color: $main-text-clr;
+    }
+
     &__text-paragraph {
 
 
@@ -48,6 +55,10 @@
         font-size: 48px;
         @container (max-width: 768px) {
             font-size: 1rem;
+            font-weight: 900;
+        }
+        @container (max-width: 430px) {
+            font-size: 1.4rem;
             font-weight: 900;
         }
     }
