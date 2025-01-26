@@ -10,7 +10,7 @@ type FormField = {
 
 type FormProps = {
   inputs: FormField[];
-  formTitle: string;
+  formTitle?: string;
   buttonText: string;
   additionalElements?: React.ReactNode;
   onSubmit: (data: Record<string, string | boolean>) => void;
@@ -19,8 +19,13 @@ type FormProps = {
     title?: string;
     fieldset?: string;
     label?: string;
+    labelCheckbox?: string;
+    checkboxWrapper?: string;
+    checkbox?: string;
+    textarea?: string;
     input?: string;
     button?: string;
+  
   };
 };
 

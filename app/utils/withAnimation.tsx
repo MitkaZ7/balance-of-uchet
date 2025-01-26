@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 interface WithAnimationProps {
-  children: React.ReactElement<any>; // Ожидаем единственный React-элемент
+  children: React.ReactElement<React.HTMLProps<HTMLElement>>; // Типизируем дочерний элемент
   animationClass?: string; // Класс анимации
   delay?: number; // Задержка для анимации
   index?: number; // Индекс для последовательных задержек
