@@ -3,29 +3,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: Russo, Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 1.4rem;
+    // font-size: 1.4rem;
     margin-top: 50px;
     padding: 20px 60px 0;
-    white-space: nowrap;
-
+    
+    font-size: clamp(1rem, calc($index * 0.5), 1.9rem);
 
 
     @container (max-width: 768px) {
-        font-size: 1rem;
+        // font-size: calc($index * 0.9);
     }
     @container (max-width: 430px) {
         margin-top: 15px;
-        font-size: 1rem;
+        // font-size: calc($index * 1.2);
         padding: 0 30px;
     }
 
     &__company {
         margin-right: 10px;
         transition: opacity ease-in-out 0.4s;
+        @include link;
+        white-space: nowrap;
         &:hover {
-            filter:opacity(.5);
+            // filter:opacity(.5);
             cursor: default;
         }
     }
@@ -39,7 +41,7 @@
 
     &__nav-phone {
         margin-right: 50px;
-
+        white-space: nowrap;
         @container (max-width: 768px) {
 
         }

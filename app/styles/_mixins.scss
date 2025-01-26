@@ -3,9 +3,9 @@
     border-radius: 19px;
 }
 
-@mixin link {
+@mixin link($color: $main-text-clr){
     text-decoration: none;
-    color: $main-text-clr;
+    color: $color;
     transition: ease-in-out 0.4s;
 
     &:hover {
@@ -13,12 +13,12 @@
     }
 
     &:visited {
-        color: $main-text-clr;
+        color: $color;
     }
 
     &:focus {
-        outline: $main-text-clr;
-        box-shadow: 0 0 0 2px $main-text-clr;
+        outline: $color;
+        box-shadow: 0 0 0 2px $color;
     }
 }
 

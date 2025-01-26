@@ -25,7 +25,7 @@
     }
 
     &__details {
-        font-size: 24px;
+        font-size: 1.5rem;
 
         @container (max-width: 430px) {
       
@@ -36,10 +36,13 @@
         // align-self: flex-start;
         li {
             margin-bottom: 10px;
+            a {
+                @include link($bright-text-clr);
+            }
         }
     }
     &__company-name {
-        font-size: 36px;
+        font-size: 1.5rem;
 
         @container (max-width: 430px) {
       
@@ -58,12 +61,12 @@
 
     }
     &__social-links {
-        // align-self: flex-end;
+        align-self: center;
         ul {
             display: flex;
             gap: 10px;
-
-
+          
+            justify-self: center;
             @container (max-width: 430px) {
                 justify-content: space-between;
                gap: 5px;
@@ -80,6 +83,15 @@
     &__authority {
         // min-width: 960px;
         text-align: center;
+        width: 100%;
+        color:$lighter-text-clr;
+    }
+    &__policy-rules {
+        @include link($bright-text-clr);
+        font-size: calc($index * 0.3);
+        font-size: clamp(0.2rem, calc($index * 1), 0.8rem);
+
+      
     }
 
 }

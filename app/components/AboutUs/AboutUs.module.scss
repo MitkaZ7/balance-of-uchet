@@ -11,6 +11,7 @@
 
     @container (max-width: 430px) {
     //   padding: 0 30px;
+        margin-top: 20px;
         padding: 0;
     }
 
@@ -62,6 +63,7 @@
         margin-top: 80px;
         font-size: 36px;
         color: $main-text-clr;
+        font-weight: 900;
 
         @container (max-width: 768px) {
             margin-top: 35px;
@@ -122,27 +124,12 @@
     }
     &__results-list {
         padding: 0 30px;
-
+        font-weight: 900;
     }
     &__result-item {
-         p:first-of-type {
-            font-weight: 900;
-            font-size: 5.5rem;
-            text-align: right;
-            color: $lighter-text-clr;
-            text-align: left;
-
-            @container (max-width: 768px) {
-                font-size: 5rem;
-            }
-
-            @container (max-width: 430px) {
-                font-size: 3rem;
-                // color:red;
-             }
-         }
+      
          p:last-of-type {
-            font-size: 32px;
+            font-size: clamp(1rem, calc($index * 1), 2rem);;
             color: $main-text-clr;
             margin-bottom: 65px;
 
@@ -156,6 +143,22 @@
                margin-bottom: 20px;
             }
          }
+    }
+
+    &__result-counter {
+        font-size: 5.5rem;
+        text-align: left;
+        color: $lighter-text-clr;
+
+        @container (max-width: 768px) {
+            font-size: 5rem;
+        }
+
+        @container (max-width: 430px) {
+            font-size: 3rem;
+         }
+
+       
     }
 
     &__photo-wrapper {}
@@ -176,7 +179,7 @@
 
         @container (max-width: 430px) {
             margin-top: 30px;
-            min-width: 330px;
+        
             max-height: 245px;
             width: 100%; 
             height: 100%; 
@@ -193,19 +196,20 @@
 
     &__ending-phrase {
         font-weight: 400;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         text-align: center;
         color: $main-text-clr;
 
         @container (max-width: 768px) {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             margin-top: 70px;
 
          }
 
         @container (max-width: 430px) {
-           font-size: 1rem;
+           font-size: 0.9rem;
            margin-top: 20px;
+           font-weight: 900;
 
         }
     }
