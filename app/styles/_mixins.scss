@@ -1,20 +1,24 @@
 @mixin rounded-dark-border {
-    border: 1px solid $main-color;
+    border: 1px solid $main-text-clr;
     border-radius: 19px;
 }
 
-@mixin link {
-    
+@mixin link($color: $main-text-clr){
+    text-decoration: none;
+    color: $color;
+    transition: ease-in-out 0.4s;
+
     &:hover {
-        color: $main-color;
+        filter:opacity(.5)
     }
 
     &:visited {
-        color: $main-color;
+        color: $color;
     }
 
     &:focus {
-        outline: $main-color;
-        box-shadow: 0 0 0 2px $main-color;
+        outline: $color;
+        box-shadow: 0 0 0 2px $color;
     }
 }
+

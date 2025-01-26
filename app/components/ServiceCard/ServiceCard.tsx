@@ -7,8 +7,10 @@ type ServiceCardProps = Service;
 export const ServiceCard = ({ title, number, examples }:ServiceCardProps) => {
   return (
     <div className={styles['service-card']}>
-        <p className={styles['service-card__num']}>{number}</p>
-        <h3 className={styles['service-card__title']}>{title}</h3>
+        {/* <div className={styles['service-card__header']}> */}
+            <p className={styles['service-card__num']}>{number}</p>
+            <h3 className={styles['service-card__title']}>{title}</h3>
+        {/* </div> */}
         <ul className={styles['service-card__specs-list']}>
         {
             examples.length > 0 && 

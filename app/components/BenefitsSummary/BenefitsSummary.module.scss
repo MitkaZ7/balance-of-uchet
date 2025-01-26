@@ -1,28 +1,75 @@
 .summary {
-    margin: 30px auto 70px; 
-    font-family: Poiret, Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    color: $bright-color;
-    max-width: 1015px;
+    // margin: 30px auto 70px; 
+    margin: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    // font-weight: 700;
+    color: $alternate-text-clr;
+    // max-width: 1015px;
     min-height: 240px;
-    font-size: 30px;
-    background-color: $dark-bg-color;
+    font-size: 2rem;
+    background-color: $dark-bg-clr;
     border-radius: 32px 0 32px 98px;
+    // font-size: clamp(0.7rem, calc($index * 0.6), 2rem);
 
     display: flex;
     flex-direction: column;
+    place-content: center;
     // align-items: center;
     // justify-content: center;
     padding: 25px 0 30px 50px;
 
+    @container (max-width: 768px) {
+        // padding: 15px 15px 5px 15px;
+        padding: 10px;
+        padding-left: 15px;
+        border-radius: 30px;
+        min-height: 150px;
+        // min-height: 150px;
+        max-height: 150px;
+    }
+
+    @container (max-width: 430px) {
+        border-radius: 10px 30px 30px 30px;
+        border: 2px solid $dark-bg-clr;
+        background-color: $light-bg-clr;
+        color: $main-text-clr;
+        min-height: auto;
+       
+    }
+
     &__text-paragraph {
+        font-size: clamp(0.7rem, calc($index * 1), 2rem);
+
+
+        @container (max-width: 768px) {
+            // font-size: 1rem;
+            text-align: left;
+           
+        }
+
         max-width: 900px;
 
         &:nth-of-type(1) {
             margin-bottom: 10px;
+            @container (max-width: 768px) {
+                margin-top: 10px;
+               
+            }
         }
     }
     &__text-accent {
-        font-size: 48px;
+        color: $bright-text-clr;
+        // font-size: 2rem;
+        @container (max-width: 768px) {
+            // font-size: 1rem;
+            
+            font-weight: 900;
+        }
+        @container (max-width: 430px) {
+            // font-size: 1.4rem;
+            font-weight: 900;
+        color: $main-text-clr;
+
+        }
     }
 }

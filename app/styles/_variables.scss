@@ -1,10 +1,20 @@
 //colors:
-$main-color: #3C4434;
-$lighten-color: #7B8076;
-$aletrnate-color: #F6F5F5;
-$light-bg-color: #F6F5F5;
-$dark-bg-color: #3C4434;
-$darken-bg-color: #303828;
-$bright-color: #fff;
-$light-darken-bg-color: #D9D9D9;
-$shadowed-bg-color: #76767661;
+$main-text-clr: #3C4434;
+$lighter-text-clr: #7B8076;
+$alternate-text-clr: #F6F5F5;
+$light-bg-clr: #F6F5F5;
+$dark-bg-clr: #3C4434;
+$darken-bg-clr: #303828;
+$bright-text-clr: #fff;
+$light-darken-bg-clr: #D9D9D9;
+$darken-alt-bg-clr: #76767661;
+// screen-sizes:
+
+$size-sm: 360px;
+$size-m: 694px;
+$size-l: 960px; 
+// font
+$base-font-size: 14px;
+
+$index:  calc(1.3vw + 1vh);
+

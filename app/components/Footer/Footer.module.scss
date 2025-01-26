@@ -1,25 +1,54 @@
 .footer {
     padding:  55px 60px 80px;
-    color: $bright-color;
-    background-color: $darken-bg-color;
-    margin-bottom: 200px;
-    margin-top: 150px;
+    color: $bright-text-clr;
+    background-color: $darken-bg-clr;
+    // margin-bottom: 200px;
+    margin-top: 100px;
     justify-content: space-between;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    // flex-direction: column;
 
+    @container (max-width: 430px) {
+        margin-bottom: 0;
+        font-size: 0.7rem;
+        padding:  40px 15px 30px;
+        margin-top: 35px;
+    }
+    
+    // flex-direction: column;
+    @container (max-width: 430px) {
+        margin-bottom: 0;
+        font-size: 0.7rem;
+        padding:  40px 15px 30px;
+        margin-top: 35px;
+    }
 
     &__details {
-        font-size: 24px;
+        font-size: 1.5rem;
+
+        @container (max-width: 430px) {
+      
+            font-size: 0.7rem;
+       
+        }
+
         // align-self: flex-start;
         li {
             margin-bottom: 10px;
+            a {
+                @include link($bright-text-clr);
+            }
         }
     }
     &__company-name {
-        font-size: 36px;
+        font-size: 1.5rem;
+
+        @container (max-width: 430px) {
+      
+            font-size: 0.7rem;
+       
+        }
        
     }
     &__company-email {
@@ -32,10 +61,18 @@
 
     }
     &__social-links {
-        // align-self: flex-end;
+        align-self: center;
         ul {
             display: flex;
             gap: 10px;
+          
+            justify-self: center;
+            @container (max-width: 430px) {
+                justify-content: space-between;
+               gap: 5px;
+           
+            }
+
             li {
                 
             }
@@ -44,8 +81,17 @@
 
     }
     &__authority {
-        min-width: 960px;
+        // min-width: 960px;
         text-align: center;
+        width: 100%;
+        color:$lighter-text-clr;
+    }
+    &__policy-rules {
+        @include link($bright-text-clr);
+        font-size: calc($index * 0.3);
+        font-size: clamp(0.2rem, calc($index * 1), 0.8rem);
+
+      
     }
 
 }
