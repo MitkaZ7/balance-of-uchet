@@ -19,7 +19,7 @@ export const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
 
   useEffect(() => {
     const startTime = Date.now();
-    const endTime = startTime + duration;
+    // const endTime = startTime + duration;
 
     const tick = () => {
       const now = Date.now();
