@@ -1,6 +1,6 @@
 .callme-section {
     // margin-top: 160px;
-    margin-top: clamp(20px, calc($index * 1), 140px);
+    margin-top: clamp(60px, calc($index * 1), 140px);
     display: grid;
     grid-template-rows: auto 1fr;
     
@@ -40,16 +40,17 @@
         border-radius: 25px;
         display: flex;
         justify-content: center;
+        // justify-content: center;
         border-color: $main-text-clr;
         // background-color: $light-bg-clr;
         // background:linear-gradient(180deg, $light-bg-clr, $light-bg-clr);
-        position: relative;
+        // position: relative;
         @include rounded-dark-border;
         text-align: center;
-        font-family: Montserrat, Helvetica, sans-serif;
+        line-height: normal;
         font-size: 25px;
         margin: 0 20px;
-        padding: 5px 0;
+        padding: 5px;
        
         
         @container (max-width: 768px) {
