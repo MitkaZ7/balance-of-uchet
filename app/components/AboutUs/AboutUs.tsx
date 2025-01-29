@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import styles from './AboutUs.module.scss'
 import Image from 'next/image'
 import photo from '../../../public/images/victory-photo.png'
-import photo_sm from '../../../public/images/victory-photo-sm.png'
 import { WithAnimation } from 'app/utils/withAnimation';
 import { AnimatedCounter } from 'app/utils/animatedCounter';
 export const AboutUs = () => {
