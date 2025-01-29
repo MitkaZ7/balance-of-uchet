@@ -58,8 +58,9 @@
 
         @container (max-width: 430px) {
            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            grid-template-rows: repeat(auto-fit,minmax(max-content, 200px));
+            grid-template-rows: repeat(auto-fit,minmax(max-content, 220px));
             column-gap: 20px;
+            row-gap: 10px;
         }
         
 

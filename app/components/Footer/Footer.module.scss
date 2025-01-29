@@ -1,5 +1,5 @@
 .footer {
-    padding:  55px 60px 80px;
+    padding:  40px 60px;
     color: $bright-text-clr;
     background-color: $darken-bg-clr;
     // margin-bottom: 200px;
@@ -25,7 +25,7 @@
     }
 
     &__details {
-        font-size: 1.5rem;
+        font-size: 1rem;
 
         @container (max-width: 430px) {
       

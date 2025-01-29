@@ -52,7 +52,7 @@ export const Footer = () => {
         </ul>
 
       </div>
-      <p className={styles.footer__authority}>{new Date().getFullYear()}, mitka.dev</p>
+      <p className={styles.footer__authority}>{new Date().getFullYear()}, сайт сделал mitka.dev</p>
 
     </footer>
   )
