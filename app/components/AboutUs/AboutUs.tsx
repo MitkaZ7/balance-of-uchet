@@ -7,17 +7,7 @@ import { WithAnimation } from 'app/utils/withAnimation';
 import { AnimatedCounter } from 'app/utils/animatedCounter';
 export const AboutUs = () => {
 
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 430);
-    };
-
-    handleResize(); // Проверяем при загрузке
-    window.addEventListener('resize', handleResize);
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  
 
   return (
     <section className={styles['about-section']}>
