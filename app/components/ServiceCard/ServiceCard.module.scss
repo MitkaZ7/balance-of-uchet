@@ -172,6 +172,10 @@
             background-color: $light-bg-clr;
             bottom: -5px;
             z-index: 2;
+
+            @container (max-width: 430px) {
+                height: 10px;
+            }
         }
     }
 
@@ -267,8 +271,8 @@
             width: 100%;
             grid-row-start: 2;
             align-self: start;
-            font-size: calc($index * 0.8);
-
+            font-size: calc($index * 0.9);
+            
             grid-template-rows: auto;
             // align-self: end;
             // text-align: left;

@@ -9,19 +9,15 @@
     display: flex;
     flex-wrap: wrap;
 
-    @container (max-width: 430px) {
-        margin-bottom: 0;
-        font-size: 0.7rem;
-        padding:  40px 15px 30px;
-        margin-top: 35px;
-    }
     
     // flex-direction: column;
     @container (max-width: 430px) {
         margin-bottom: 0;
         font-size: 0.7rem;
         padding:  40px 15px 30px;
-        margin-top: 35px;
+        margin-top: 15px;
+        padding:  15px 15px 30px;
+
     }
 
     &__details {
@@ -85,6 +81,7 @@
         text-align: center;
         width: 100%;
         color:$lighter-text-clr;
+        font-size: 0.7rem
     }
     &__policy-rules {
         @include link($bright-text-clr);

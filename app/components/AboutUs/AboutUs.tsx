@@ -60,19 +60,21 @@ export const AboutUs = () => {
                 <p>миллиона рублей было сэкономлено за полгода при индивидуальном согласовании снижения комиссии на банковские услуги для одной из наших компаний.</p>
               </li>
             </ul>
-            <div className={styles['about-section__photo-wrapper']}>
+        
             <WithAnimation animationClass="fade-in" delay={700}>
             <Image
               className={styles['about-section__photo']}
               // src={photo}
-              src={isSmallScreen ? photo_sm : photo}
+              // src={isSmallScreen ? photo_sm : photo}
+              src={photo}
+
               alt="Picture of the author"
               sizes="(max-width: 430px) 100px, (max-width: 768px) 500px, 1000px"
       // blurDataURL="data:..." automatically provided
       // placeholder="blur" // Optional blur-up while loading
             />
             </WithAnimation>
-            </div>
+           
             
 
         </div>
