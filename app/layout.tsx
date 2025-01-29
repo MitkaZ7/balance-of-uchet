@@ -5,7 +5,7 @@ import "./styles/main.scss";
 
 
 export const metadata: Metadata = {
-  title: "ИП Гринькова В.Н. ",
+  title: "ИП Гринькова В.Н. - Бухгалтерский учет",
   description: "Оказание услуг по ведению бухгалтерского и налогового учёта",
 };
 
