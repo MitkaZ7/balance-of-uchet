@@ -185,7 +185,7 @@
         height: 100%;
         grid-column: -1 / 1;
         grid-row: 1 ;
-        font-size: clamp(0.6rem, calc($index * 1), 1.3rem);
+        font-size: clamp(0.6rem, calc($index * 0.63), 1.3rem);
         letter-spacing: 0.1em;
         z-index: 3;
         align-self: end;
